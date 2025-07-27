@@ -2,7 +2,7 @@
 
 A comprehensive Polyglot v3 NodeServer for integrating Victron Energy | API Access | Depends on endpoint | Rate-limited to ~3 req/sec |
 
-### Configure the NodeServerth Universal Devices ISY home automation controllers.
+### Configure the NodeServer Universal Devices ISY home automation controllers.
 
 ## What is this?
 
@@ -288,6 +288,9 @@ Contributions are welcome! If you find bugs or have suggestions for improvements
 - [Universal Devices ISY](https://www.universal-devices.com/)
 - [Polyglot v3 Documentation](https://polyglot.universal-devices.com/)
 - [UDI Interface Library](https://github.com/UniversalDevicesInc/udi-interface)
+- [Victron VRM API Documentation](https://vrm-api-docs.victronenergy.com/)
+- [VRM Portal API Reference](https://vrm-api-docs.victronenergy.com/#/)
+- [Victron Energy Developer Resources](https://www.victronenergy.com/live/open_source:start)
 
 ## Troubleshooting
 

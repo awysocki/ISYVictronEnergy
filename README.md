@@ -1,8 +1,6 @@
 # ISY Victron Energy NodeServer (PG3x)
 
-A comprehensive Polyglot v3 NodeServer for integrating Victron Energy | API Access | Depends on endpoint | Rate-limited to ~3 req/sec |
-
-### Configure the NodeServer Universal Devices ISY home automation controllers.
+A comprehensive Polyglot v3 NodeServer for integrating Victron Energy solar systems with Universal Devices ISY home automation controllers.
 
 ## What is this?
 

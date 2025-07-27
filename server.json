@@ -3,12 +3,15 @@
     "docs": "https://github.com/awysocki/ISYVictronEnergy/blob/main/README.md",
     "type": "python3",
     "executable": "victron_energy.py",
-    "install": "install.sh",
+    "install": {
+        "script": "install.sh"
+    },
     "description": "Complete Victron Energy system integration for ISY - monitors battery monitors, solar chargers, inverters, and system gateways via VRM Portal API",
     "notice": "Requires VRM Portal API token and Installation ID. All device values default to zero until successful VRM connection is established.",
     "shortPoll": "60",
     "longPoll": "600",
     "profile_version": "1.0.0",
+    "url": "https://github.com/awysocki/ISYVictronEnergy",
     "credits": [
         {
             "title": "ISY Victron Energy NodeServer",

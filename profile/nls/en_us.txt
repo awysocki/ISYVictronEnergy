@@ -1,0 +1,103 @@
+# ctl
+ND-ctl-NAME = Victron Energy Controller
+ND-ctl-ICON = GenericCtl
+CMD-ctl-DISCOVER-NAME = Re-Discover Victron Devices
+ST-ctl-ST-NAME = NodeServer Online
+ST-ctl-GV0-NAME = Cache Refresh In
+
+# Victron Gateway (Cerbo GX, Venus GX)
+ND-VicGateway-NAME = Victron Gateway
+ND-VicGateway-ICON = GenericCtl
+ST-VicGateway-ST-NAME = System Status
+ST-VicGateway-GV0-NAME = Firmware Version
+ST-VicGateway-GV1-NAME = Active Alarms
+ST-VicGateway-GV2-NAME = Connected Devices
+ST-VicGateway-GV3-NAME = VRM Connected
+ST-VicGateway-GV4-NAME = Free Disk Space (MB)
+ST-VicGateway-GV5-NAME = Network Type
+ST-VicGateway-GV6-NAME = ESS Battery State (hex)
+ST-VicGateway-GV7-NAME = ESS SOC Limit (%)
+ST-VicGateway-GV8-NAME = Services Status (hex)
+ST-VicGateway-GV9-NAME = System Errors
+ST-VicGateway-GV10-NAME = Grid Setpoint (W)
+ST-VicGateway-GV11-NAME = Relay States (hex)
+CMD-VicGateway-QUERY-NAME = Query
+
+# Victron Battery Monitor (SmartShunt, BMV)
+ND-VicShunt-NAME = Victron Battery Monitor
+ND-VicShunt-ICON = GenericCtl
+ST-VicShunt-ST-NAME = Battery SOC
+ST-VicShunt-CV-NAME = Battery Voltage
+ST-VicShunt-CC-NAME = Battery Current
+ST-VicShunt-CPW-NAME = Battery Power
+ST-VicShunt-CLITEMP-NAME = Battery Temperature
+ST-VicShunt-GV0-NAME = Low Voltage Alarm
+ST-VicShunt-GV1-NAME = High Voltage Alarm
+ST-VicShunt-GV2-NAME = Low SOC Alarm
+ST-VicShunt-GV3-NAME = Low Temp Alarm
+ST-VicShunt-GV4-NAME = High Temp Alarm
+CMD-VicShunt-QUERY-NAME = Query
+
+# Victron Inverter (MultiPlus, Quattro, Phoenix)
+ND-VicBatt-NAME = Victron Inverter
+ND-VicBatt-ICON = GenericCtl
+ST-VicBatt-ST-NAME = AC Power
+ST-VicBatt-GV0-NAME = Inverter State
+ST-VicBatt-CV-NAME = AC Voltage
+ST-VicBatt-CC-NAME = AC Current
+ST-VicBatt-CPW-NAME = AC Frequency
+ST-VicBatt-CLITEMP-NAME = Inverter Temperature
+CMD-VicBatt-QUERY-NAME = Query
+
+# Victron Solar Charger (MPPT)
+ND-VicSolar-NAME = Victron Solar Charger
+ND-VicSolar-ICON = GenericCtl
+ST-VicSolar-ST-NAME = Solar Power
+ST-VicSolar-GV0-NAME = Charge State
+ST-VicSolar-CV-NAME = Solar Voltage
+ST-VicSolar-CC-NAME = Battery Current
+ST-VicSolar-CPW-NAME = Battery Voltage
+ST-VicSolar-CLITEMP-NAME = Battery Temperature
+ST-VicSolar-GV1-NAME = Yield Today
+ST-VicSolar-GV2-NAME = Max Power Today
+ST-VicSolar-GV3-NAME = Load Output State
+ST-VicSolar-GV4-NAME = Load Current
+ST-VicSolar-GV5-NAME = Load Voltage
+ST-VicSolar-GV6-NAME = Load Power
+ST-VicSolar-GV7-NAME = Battery Power
+CMD-VicSolar-QUERY-NAME = Query
+
+# System Status enumerators (Gateway)
+SYSSTATUS-0 = Offline
+SYSSTATUS-1 = Online  
+SYSSTATUS-2 = Maintenance
+
+# Inverter State enumerators
+INVSTATE-0 = Off
+INVSTATE-1 = On
+INVSTATE-2 = Invert
+INVSTATE-3 = Charge
+
+# Charge State enumerators (MPPT)
+CHARGESTATE-0 = Off
+CHARGESTATE-1 = Low Power
+CHARGESTATE-2 = Fault
+CHARGESTATE-3 = Bulk
+CHARGESTATE-4 = Absorption
+CHARGESTATE-5 = Float
+
+# Load Output State enumerators (MPPT)  
+LOADSTATE-0 = Off
+LOADSTATE-1 = On
+LOADSTATE-2 = Unknown
+
+# Connection Status enumerators
+CONN-0 = Disconnected
+CONN-1 = Connected
+
+# Network Type enumerators
+NETTYPE-0 = Not Connected
+NETTYPE-1 = Ethernet
+NETTYPE-2 = WiFi
+NETTYPE-3 = Modem
+

@@ -1,0 +1,92 @@
+<editors>
+    <!-- Percentage editor for battery SOC (0-100%) -->
+    <editor id="percentage">
+        <range uom="51" min="0" max="100" />
+    </editor>
+    
+    <!-- Power editor for watts -->
+    <editor id="power">
+        <range uom="73" min="0" max="99999" />
+    </editor>
+    
+    <!-- Voltage editor for 0.1V units (0-999.9V) -->
+    <editor id="voltage">
+        <range uom="72" min="0" max="9999" />
+    </editor>
+    
+    <!-- Current editor for 0.1A units (0-999.9A) -->
+    <editor id="current">
+        <range uom="1" min="-9999" max="9999" />
+    </editor>
+    
+    <!-- Temperature editor supporting both Celsius and Fahrenheit -->
+    <editor id="temperature">
+        <range uom="4" min="-400" max="1500" />   <!-- Celsius: -40.0°C to 150.0°C -->
+        <range uom="17" min="-400" max="3000" />  <!-- Fahrenheit: -40.0°F to 300.0°F -->
+    </editor>
+    
+    <!-- Alarm status editor (0=No Alarm, 1=Alarm Active) -->
+    <editor id="alarm_status">
+        <range uom="2" min="0" max="1" />
+    </editor>
+    
+    <!-- Frequency editor for 0.1Hz units (50-70Hz) -->
+    <editor id="frequency">
+        <range uom="90" min="500" max="700" />
+    </editor>
+    
+    <!-- Energy editor for 0.01kWh units (0-999.99kWh) -->
+    <editor id="energy">
+        <range uom="33" min="0" max="99999" />
+    </editor>
+    
+    <!-- Connection status editor for controller -->
+    <editor id="connection_status">
+        <range uom="25" subset="0,1" nls="CONN" />
+    </editor>
+    
+    <!-- Cache status editor - seconds until refresh -->
+    <editor id="cache_seconds">
+        <range uom="56" min="0" max="999" />
+    </editor>
+    
+    <!-- String editor for version -->
+    <editor id="1">
+        <range type="string"/>
+    </editor>
+    
+    <!-- Count editor for numeric values -->
+    <editor id="count">
+        <range uom="56" min="0" max="999" />
+    </editor>
+    
+    <!-- System status with specific states -->
+    <editor id="system_status">
+        <range uom="25" subset="0,1,2" nls="SYSSTATUS" />
+    </editor>
+    
+    <!-- Inverter state editor -->
+    <editor id="inverter_state">
+        <range uom="25" subset="0,1,2,3" nls="INVSTATE" />
+    </editor>
+    
+    <!-- VRM connection status -->
+    <editor id="vrm_connected">
+        <range uom="25" subset="0,1" nls="CONN" />
+    </editor>
+    
+    <!-- Charge state editor for MPPT -->
+    <editor id="charge_state">
+        <range uom="68" subset="0,1,2,3,4,5" nls="CHARGESTATE" />
+    </editor>
+    
+    <!-- Load output state editor for MPPT -->
+    <editor id="load_output_state">
+        <range uom="68" subset="0,1,2" nls="LOADSTATE" />
+    </editor>
+    
+    <!-- Network connection type editor -->
+    <editor id="network_type">
+        <range uom="25" subset="0,1,2,3" nls="NETTYPE" />
+    </editor>
+</editors>

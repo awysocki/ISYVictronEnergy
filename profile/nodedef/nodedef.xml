@@ -1,0 +1,110 @@
+<nodeDefs>
+    <!-- Victron Energy Controller -->
+    <nodeDef id="controller" nls="ctl">
+        <editors />
+        <sts>
+            <st id="ST" editor="connection_status" />
+            <st id="GV0" editor="cache_seconds" />
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+                <cmd id="DISCOVER" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+    
+    <!-- Victron Gateway (Cerbo GX, Venus GX) -->
+    <nodeDef id="VicGateway" nls="VicGateway">
+        <editors />
+        <sts>
+            <st id="ST" editor="system_status" />
+            <st id="GV0" uom="56" editor="1" />
+            <st id="GV1" editor="count" />
+            <st id="GV2" editor="count" />
+            <st id="GV3" editor="vrm_connected" />
+            <st id="GV4" editor="count" />
+            <st id="GV5" editor="network_type" />
+            <st id="GV6" uom="56" editor="1" />
+            <st id="GV7" editor="percentage" />
+            <st id="GV8" uom="56" editor="1" />
+            <st id="GV9" editor="count" />
+            <st id="GV10" editor="power" />
+            <st id="GV11" uom="56" editor="1" />
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+                <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+    
+    <!-- Victron Battery Monitor (SmartShunt, BMV) -->
+    <nodeDef id="VicShunt" nls="VicShunt">
+        <editors />
+        <sts>
+            <st id="ST" editor="percentage" />
+            <st id="CV" editor="voltage" />
+            <st id="CC" editor="current" />
+            <st id="CPW" editor="power" />
+            <st id="CLITEMP" editor="temperature" />
+            <st id="GV0" editor="alarm_status" />
+            <st id="GV1" editor="alarm_status" />
+            <st id="GV2" editor="alarm_status" />
+            <st id="GV3" editor="alarm_status" />
+            <st id="GV4" editor="alarm_status" />
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+                <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+    
+    <!-- Victron Inverter (MultiPlus, Quattro, Phoenix) -->
+    <nodeDef id="VicBatt" nls="VicBatt">
+        <editors />
+        <sts>
+            <st id="ST" editor="power" />
+            <st id="GV0" editor="inverter_state" />
+            <st id="CV" editor="voltage" />
+            <st id="CC" editor="current" />
+            <st id="CPW" editor="frequency" />
+            <st id="CLITEMP" editor="temperature" />
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+                <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+    
+    <!-- Victron Solar Charger (MPPT) -->
+    <nodeDef id="VicSolar" nls="VicSolar">
+        <editors />
+        <sts>
+            <st id="ST" editor="power" />
+            <st id="GV0" editor="charge_state" />
+            <st id="CV" editor="voltage" />
+            <st id="CC" editor="current" />
+            <st id="CPW" editor="voltage" />
+            <!-- CLITEMP (temperature) driver removed - SmartSolar MPPT doesn't provide temperature data -->
+            <st id="GV1" editor="energy" />
+            <st id="GV2" editor="power" />
+            <st id="GV3" editor="load_output_state" />
+            <st id="GV4" editor="current" />
+            <st id="GV5" editor="voltage" />
+            <st id="GV6" editor="power" />
+            <st id="GV7" editor="power" />
+        </sts>
+        <cmds>
+            <sends />
+            <accepts>
+                <cmd id="QUERY" />
+            </accepts>
+        </cmds>
+    </nodeDef>
+</nodeDefs>
